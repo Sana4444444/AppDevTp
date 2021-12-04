@@ -148,6 +148,7 @@ a {
     position: relative;
     z-index: 1;
 }
+
 #main::after{
     content: '';
     position: absolute;
@@ -191,47 +192,8 @@ a {
     transition: .3s ease;
     transition-property: background-color, color;
 }
-#main .cta:hover {
-    color: white;
-    background-color: yellowgreen;
-}
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid yellowgreen;
-    margin-top: 13px;
-    color: white;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.btn{
-    width: 100px;
-    height: 40px;
-    background: yellowgreen;
-    border: yellowgreen;
-    margin-top: 13px;
-    color: white;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.btn:focus{
-    outline: none;
-}
-.srch:focus{
-    outline: none;
-}
+
+
 ::placeholder{
     color: white;
     font-family: Arial;
@@ -325,5 +287,25 @@ a {
     z-index: -1;
 }
 
+#header .hamburger{
+    display: none;
+}
 
-/*end of recipes section*/
+#header .nav-list ul{
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+}
+
+#header .nav-list ul a::after{
+    display: none;
+}
+#header .nav-list ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+#header .nav-list ul li a{
+    font-size: 1.8rem;
+}
